@@ -15,3 +15,4 @@ ios/pods/**/*
 android/app/build
 android/.gradle
 android/.idea
+ios/Pods
