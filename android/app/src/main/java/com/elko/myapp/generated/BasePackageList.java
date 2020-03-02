@@ -1,4 +1,4 @@
-package com.myapp.generated;
+package com.elko.myapp.generated;
 
 import java.util.Arrays;
 import java.util.List;

@@ -16,3 +16,4 @@ android/app/build
 android/.gradle
 android/.idea
 ios/Pods
+android/local.properties
