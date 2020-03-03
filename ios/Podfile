@@ -52,7 +52,7 @@ target 'myapp' do
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
   # Automatically detect installed unimodules
-  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
 
 end
 use_native_modules!
