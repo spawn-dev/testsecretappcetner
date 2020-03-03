@@ -2,7 +2,7 @@
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios --scheme myapp",
+    "ios": "react-native run-ios",
     "postinstall": "jetify && cd ios && pod install && cd -",
     "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj"
   },
