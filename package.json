@@ -1,11 +1,16 @@
 {
+  "name": "myapp",
+  "config": {
+    "iosProjectName": "1:157175452340:ios:41629cc9b57c97d5f9bde1",
+    "androidProjectName": "1:157175452340:android:6202e96dce8ed954f9bde1"
+  },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios --scheme myapp",
     "postinstall": "jetify && cd ios && pod install && cd - && npm run create-config-files",
     "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj",
-    "create-config-files": "node create.config.files.js"
+    "create-config-files": "node create.config.files.js $npm_package_config_iosProjectName $npm_package_config_androidProjectName"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",

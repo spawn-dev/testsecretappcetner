@@ -3,20 +3,23 @@ const fs = require('fs');
 
 const IOS_CONFIG_FILE = "./ios/myapp/GoogleService-Info.plist";
 const ANDROID_CONFIG_FILE = "./android/app/google-services.json";
+const iosAppName = process.argv.slice(2)[0];
+const androidAppName = process.argv.slice(2)[1];
 
 try {
     var serviceAccount = require("./serviceAccountKey.json");
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
     });
+    if(!iosAppName || !androidAppName){
+        console.log('Ios and Android app names much not be null.  Got Ios and Android names: ', iosAppName, androidAppName)
+    }
 }
 catch (error) {
     console.log("Error generation Firebase config files for IOS and Android.  Ensure that you have downloaded the serviceAccountKey.json file from https://console.firebase.google.com/project/myapp-22b6f/settings/serviceaccounts/adminsdk  it is at the root of your project directory, and named serviceAccountKey.json")
     process.exit(1)
 }
 
-const iosAppName = "1:157175452340:ios:41629cc9b57c97d5f9bde1";
-const androidAppName = "1:157175452340:android:6202e96dce8ed954f9bde1";
 
 const createAndroidGoogleConfigFile = async () => {
     return new Promise(async (resolve, reject) => {
