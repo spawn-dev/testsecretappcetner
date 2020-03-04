@@ -11,7 +11,7 @@ try {
     });
 }
 catch (error) {
-    console.log("Error generation Firebase config files for IOS and Android.  Ensure that you have downloaded the serviceAccountKey.json file from https://console.firebase.google.com/project/myapp-22b6f/settings/serviceaccounts/adminsdk and that it is at the root of your project directory")
+    console.log("Error generation Firebase config files for IOS and Android.  Ensure that you have downloaded the serviceAccountKey.json file from https://console.firebase.google.com/project/myapp-22b6f/settings/serviceaccounts/adminsdk  it is at the root of your project directory, and named serviceAccountKey.json")
     process.exit(1)
 }
 
