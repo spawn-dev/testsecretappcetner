@@ -12,7 +12,7 @@ try {
 }
 catch (error) {
     console.log("Error generation Firebase config files for IOS and Android.  Ensure that you have downloaded the serviceAccountKey.json file from https://console.firebase.google.com/project/myapp-22b6f/settings/serviceaccounts/adminsdk and that it is at the root of your project directory")
-    return
+    process.exit(1)
 }
 
 const iosAppName = "1:157175452340:ios:41629cc9b57c97d5f9bde1";
@@ -61,6 +61,6 @@ try {
 }
 catch (error) {
     console.log('Error creating Android and IOS configuration files ', error)
-    process.exit()
+    process.exit(1)
 }
 
