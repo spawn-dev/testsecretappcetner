@@ -3,13 +3,15 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios --scheme myapp",
-    "postinstall": "jetify && cd ios && pod install && cd -",
-    "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj"
+    "postinstall": "jetify && cd ios && pod install && cd - && npm run create-config-files",
+    "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj",
+    "create-config-files": "node create.config.files.js"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",
     "@react-navigation/native": "^5.0.8",
     "@react-navigation/stack": "^5.1.0",
+    "firebase-admin": "^8.9.2",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.61.4",
