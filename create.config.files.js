@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 const fs = require('fs');
 
-const IOS_CONFIG_FILE = "./ios/myapp/GoogleService-Info.plist";
+const IOS_CONFIG_FILE = "./ios/testsecretappcetner/GoogleService-Info.plist";
 const ANDROID_CONFIG_FILE = "./android/app/google-services.json";
 const iosAppName = process.argv.slice(2)[0];
 const androidAppName = process.argv.slice(2)[1];
@@ -16,7 +16,7 @@ try {
     }
 }
 catch (error) {
-    console.log("Error generation Firebase config files for IOS and Android.  Ensure that you have downloaded the serviceAccountKey.json file from https://console.firebase.google.com/project/myapp-22b6f/settings/serviceaccounts/adminsdk  it is at the root of your project directory, and named serviceAccountKey.json")
+    console.log("Error generation Firebase config files for IOS and Android.  Ensure that you have downloaded the serviceAccountKey.json file from https://console.firebase.google.com/project/testsecretappcetner-22b6f/settings/serviceaccounts/adminsdk  it is at the root of your project directory, and named serviceAccountKey.json")
     process.exit(1)
 }
 

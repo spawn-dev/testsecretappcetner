@@ -78,7 +78,7 @@ export class Login extends React.Component<Props, State> {
 }
 
 const loginUIStrings = {
-    APP_NAME: 'myapp',
+    APP_NAME: 'testsecretappcetner',
     EMAIL_INPUT_PLACEHOLDER: 'Email',
     PASSWORD_INPUT_PLACEHOLDER: 'Password',
     ALERT_ENTER_EMAIL_AND_PASS: 'You must enter an email and a password',

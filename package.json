@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "testsecretappcetner",
   "config": {
     "iosProjectName": "1:157175452340:ios:41629cc9b57c97d5f9bde1",
     "androidProjectName": "1:157175452340:android:6202e96dce8ed954f9bde1"
@@ -7,9 +7,9 @@
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios --scheme myapp",
+    "ios": "react-native run-ios --scheme testsecretappcetner",
     "postinstall": "jetify && cd ios && pod install && cd - && npm run create-config-files",
-    "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj",
+    "xcode": "open ./ios/testsecretappcetner.xcworkspace || open ./ios/testsecretappcetner.xcodeproj",
     "create-config-files": "node create.config.files.js $npm_package_config_iosProjectName $npm_package_config_androidProjectName"
   },
   "dependencies": {

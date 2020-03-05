@@ -16,10 +16,10 @@ android/app/build
 android/.gradle
 android/.idea
 ios/Pods
-ios/myapp/GoogleService-Info.plist
+ios/testsecretappcetner/GoogleService-Info.plist
 android/local.properties
 android/app/google-services.json
-android/myapp.iml
+android/testsecretappcetner.iml
 android/app/app.iml
 android/.gradle/4.10.1/fileHashes/fileHashes.bin
 android/.gradle/4.10.1/fileHashes/fileHashes.lock
